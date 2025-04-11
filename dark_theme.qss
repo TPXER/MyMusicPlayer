@@ -1,0 +1,76 @@
+/* 全局设置：所有 QWidget 的默认背景 */
+QWidget {
+    background-color: #1e1e1e;  /* 深灰黑背景 */
+    color: #E0E0E0;             /* 浅灰文字 */
+    selection-background-color: #3C3C3C;
+    selection-color: #E0E0E0;
+}
+
+/* 通用 QFrame（如果没有特定 objectName） */
+QFrame {
+    background-color: #2c2c2c;
+    color: #E0E0E0;
+}
+
+/* 针对带有 objectName "card" 的区域，通常是容器卡片 */
+QFrame#card {
+    background-color: #2c2c2c;
+    border: 1px solid #3C3C3C;
+    border-radius: 8px;
+}
+
+/* QStackedWidget 也设置为深色背景 */
+QStackedWidget {
+    background-color: #2c2c2c;
+}
+
+/* QLineEdit（搜索框等） */
+QLineEdit {
+    background-color: #2c2c2c;
+    color: #E0E0E0;
+    border: 1px solid #3C3C3C;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+/* 列表和文本浏览器 */
+QListWidget, QTextBrowser {
+    background-color: #2c2c2c;
+    color: #E0E0E0;
+    border: 1px solid #3C3C3C;
+}
+
+/* 按钮 */
+QPushButton {
+    background-color: #3C3C3C;
+    color: #E0E0E0;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #444444;
+}
+QPushButton:pressed {
+    background-color: #555555;
+}
+
+/* 滚动条设置（垂直） */
+QScrollBar:vertical {
+    border: none;
+    background: #2c2c2c;
+    width: 10px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #4C4C4C;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+}
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}

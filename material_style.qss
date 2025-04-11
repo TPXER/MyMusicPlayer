@@ -1,0 +1,110 @@
+
+QWidget {
+    background-color: #FAFAFA;
+    color: #212121;
+    font-family: Roboto, '微软雅黑', sans-serif;
+    font-size: 14px;
+}
+QPushButton {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+QPushButton:hover {
+    background-color: #BDBDBD;
+}
+QPushButton:pressed {
+    background-color: #9E9E9E;
+}
+QListWidget, QTextBrowser {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #E0E0E0;
+    border-radius: 3px;
+}
+QSlider::handle:horizontal {
+    background: #2196F3;
+    width: 12px;
+    margin: -5px 0;
+    border-radius: 6px;
+QFrame#card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+QPushButton {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+QPushButton:hover {
+    background-color: #e0e0e0;
+}
+QPushButton {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #1976D2;
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1;
+}
+QPushButton {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+QPushButton:hover {
+    background-color: #e0e0e0;
+}
+QPushButton:pressed {
+    background-color: #d0d0d0;
+}
+/* 播放进度条：水平滑块 */
+QSlider::groove:horizontal {
+    height: 6px;              /* 滑槽厚度 */
+    background: #DDD;         /* 滑槽底色 */
+    border-radius: 3px;       /* 圆角 */
+    margin: 0px;
+}
+QSlider::handle:horizontal {
+    width: 14px;              /* 滑块宽度 */
+    height: 14px;
+    margin: -4px 0;           /* 让滑块略微超出槽上下边缘，居中 */
+    background: #4CAF50;      /* 滑块颜色 */
+    border-radius: 7px;
+    border: none;
+}
+/* 已经播放部分 */
+QSlider::sub-page:horizontal {
+    background: #4CAF50;
+    border-radius: 3px;
+}
+/* 未播放部分 */
+QSlider::add-page:horizontal {
+    background: #BBB;
+    border-radius: 3px;
+}
+QSlider::groove:horizontal:hover {
+    background: #CCC;   /* 鼠标悬停时，槽体变亮一些 */
+}
+QSlider::handle:horizontal:hover {
+    background: #66BB6A; /* 鼠标悬停在滑块时，变为更亮的绿色 */
+}
+
+}
